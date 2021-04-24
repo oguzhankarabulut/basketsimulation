@@ -45,6 +45,7 @@
 </head>
 <body>
 <h2>Match Id: <b id="matchId"></b></h2>
+<h2>Match Attack Count: <b id="matchAttackCount"></b></h2>
 <div class="match-wrapper">
     <div>
         <h3>Team One</h3>
@@ -83,6 +84,7 @@
                 t1S.innerText = data.content.TeamOne.Score;
                 t2S.innerText = data.content.TeamTwo.Score;
                 document.getElementById('matchId').innerText = data.content.Id;
+                document.getElementById('matchAttackCount').innerText = data.content.AttackCount;
                 let t1StatsHTML = `
                 <tr>
                     <th>Player Id</th>
