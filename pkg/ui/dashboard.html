@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            font-family: arial, sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: lightgray;
+        }
+        h2{
+        }
+        .match-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: center;
+        }
+        .match-wrapper > div:first-child{
+            margin-right: 80px;
+        }
+        .player-stats-header{
+            font-size: 18px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<h2>Match Id: <b id="matchId"></b></h2>
+<div class="match-wrapper">
+    <div>
+        <h3>Team One</h3>
+        <b><h1 id="teamOneScore"></h1></b>
+        <hr>
+        <div class="player-stats-header">Player Stats</div>
+        <div>
+            <table id="teamOneStats">
+
+            </table>
+        </div>
+    </div>
+    <div>
+        <h3>Team Two</h3>
+        <b><h1 id="teamTwoScore"></h1></b>
+        <hr>
+        <div class="player-stats-header">Player Stats</div>
+        <div>
+            <table id="teamTwoStats">
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    const getData = () => {
+        fetch('http://localhost:8000/result')
+            .then(response => response.json())
+            .then(data => {
+                let t1S = document.getElementById('teamOneScore');
+                let t2S = document.getElementById('teamTwoScore');
+                let t1Stats = document.getElementById('teamOneStats');
+                let t2Stats = document.getElementById('teamTwoStats');
+                t1S.innerText = data.content.TeamOne.Score;
+                t2S.innerText = data.content.TeamTwo.Score;
+                document.getElementById('matchId').innerText = data.content.Id;
+                let t1StatsHTML = `
+                <tr>
+                    <th>Player Id</th>
+                    <th>TwoPointScore</th>
+                    <th>TwoPointScoreCount</th>
+                    <th>ThreePointScore</th>
+                    <th>ThreePointScoreCount</th>
+                    <th>TotalScore</th>
+                    <th>AssistCount</th>
+                </tr>
+                `
+                let t2StatsHTML = `
+                <tr>
+                    <th>Player Id</th>
+                    <th>TwoPointScore</th>
+                    <th>TwoPointScoreCount</th>
+                    <th>ThreePointScore</th>
+                    <th>ThreePointScoreCount</th>
+                    <th>TotalScore</th>
+                    <th>AssistCount</th>
+                </tr>
+                `
+                data.content.TeamOne.PlayerStats.map(item => {
+                    t1StatsHTML += `
+                    <tr>
+                        <td>${item.Id}</td>
+                        <td>${item.TwoPointScore}</td>
+                        <td>${item.TwoPointScoreCount}</td>
+                        <td>${item.ThreePointScore}</td>
+                        <td>${item.ThreePointScoreCount}</td>
+                        <td>${item.TotalScore}</td>
+                        <td>${item.AssistCount}</td>
+                    </tr>
+                    `
+                });
+                t1Stats.innerHTML = t1StatsHTML;
+                data.content.TeamTwo.PlayerStats.map(item => {
+                    t2StatsHTML += `
+                    <tr>
+                        <td>${item.Id}</td>
+                        <td>${item.TwoPointScore}</td>
+                        <td>${item.TwoPointScoreCount}</td>
+                        <td>${item.ThreePointScore}</td>
+                        <td>${item.ThreePointScoreCount}</td>
+                        <td>${item.TotalScore}</td>
+                        <td>${item.AssistCount}</td>
+                    </tr>
+                    `
+                });
+                t2Stats.innerHTML = t2StatsHTML;
+            });
+    }
+    getData();
+    setInterval(() => {
+        getData();
+    }, 1000)
+
+</script>
+</body>
+</html>

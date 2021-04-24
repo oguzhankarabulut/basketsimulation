@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f5d85fc-0a6a-43a3-8ca1-24726cef7c27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../auto-admin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/.idea/auto-admin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/cmd/auto-admin/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/pkg/handler/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/pkg/mongo/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/pkg/mongo/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../auto-admin/pkg/mongo/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/basketsimulation/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/crypto.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/match.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/matchplayer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/player.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/domain/team.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/infrastructure/mongo/client.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/infrastructure/mongo/match.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/infrastructure/mongo/matchplayer.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/service/infrastructure.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/service/match.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/service/random.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/service/result.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ui/dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ui/html.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ui/response.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ui/result.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/ui/server.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="$USER_HOME$/sdk/go1.15.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1rYweoqu9LI1KZXTtsFnh41rvQr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/infrastructure/mongo" />
+      <recent name="$PROJECT_DIR$/pkg/service" />
+      <recent name="$PROJECT_DIR$/cmd/basketsimulation" />
+      <recent name="$PROJECT_DIR$/pkg/domain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="go build basketsimulation/cmd/basketsimulation" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="basketsimulation" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="basketsimulation/cmd/basketsimulation" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="520" y="290" key="#Go_Modules" timestamp="1619169854328">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="520" y="290" key="#Go_Modules/0.0.1440.900@0.0.1440.900" timestamp="1619169854328" />
+    <state x="184" y="112" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619177606551">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1619177606551" />
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom" timestamp="1619275805872">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619275805872" />
+    <state width="1398" height="215" key="GridCell.Tab.0.center" timestamp="1619275805870">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1619275805870" />
+    <state width="1398" height="215" key="GridCell.Tab.0.left" timestamp="1619275805866">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1619275805866" />
+    <state width="1398" height="215" key="GridCell.Tab.0.right" timestamp="1619275805872">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1619275805872" />
+    <state width="1398" height="215" key="GridCell.Tab.1.bottom" timestamp="1619275784317">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1619275784317" />
+    <state width="1398" height="215" key="GridCell.Tab.1.center" timestamp="1619275784316">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1619275784316" />
+    <state width="1398" height="215" key="GridCell.Tab.1.left" timestamp="1619275784316">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1619275784316" />
+    <state width="1398" height="215" key="GridCell.Tab.1.right" timestamp="1619275784317">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="215" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1619275784317" />
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619189953091">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="518" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1619189953091" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1619189142926">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1619189142925" />
+  </component>
+</project>
